@@ -1,0 +1,103 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* PREMIUM CARD */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  transition: 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Title */
+.card h3 {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Value */
+.card p {
+  font-size: 26px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Charts */
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+/* Transactions Table */
+.table-container {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+th {
+  text-align: left;
+  padding: 14px;
+  font-size: 13px;
+  color: #64748b;
+  background: #f8fafc;
+}
+
+/* Rows */
+td {
+  padding: 14px;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Amount styling */
+.income {
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.expense {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
